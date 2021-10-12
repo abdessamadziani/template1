@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/24dbd9ce21.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homepage</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="MyStyle.css" />
+    <link rel="stylesheet" href="form-and-footer.css" />
+
+    <script>
+      function ajouter() {
+        var elt = document.createElement("tr");
+        elt.className = "lignes";
+        document.getElementById("tb").appendChild(elt);
+        var case1 = document.createElement("td");
+        case1.innerHTML = prompt("Id : ");
+        elt.appendChild(case1);
+        var case2 = document.createElement("td");
+        case2.innerHTML = prompt("Nom :");
+        elt.appendChild(case2);
+        var case3 = document.createElement("td");
+        var b = document.createElement("button");
+        b.type = "button";
+        b.onclick = "supprimer()";
+        b.innerHTML = "*";
+        case3.appendChild(b);
+        elt.appendChild(case3);
+      }
+      function supprimer() {}
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="countainer">
+        <div class="logo">
+          <img
+            src="images/about/logo-alt.webp"
+            alt="Logo Image"
+            draggable="false"
+          />
+        </div>
+        <ul class="nav">
+          <li><a class="active" href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">portfolio</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">prices</a></li>
+          <li><a href="#">team</a></li>
+          <li class="dropdown">
+            <a href="#">blog</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="https://www.google.com/" target="_blank">blog post</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+    </header>
+
+    <!-- home section -->
+    <div class="home">
+      <div class="overlay">
+        <div class="home-content">
+          <h1 class="home-title">we are creative agency</h1>
+          <p class="home-desc">
+            Lorem ipsum dolor s error nihil sapiente dolore blanditiis nihil
+            sapiente dolore blanditiis
+            <br />
+            dolor s error nihil sapiente blanditiis error nihil sapiente
+          </p>
+          <button class="btn btn-getstarted">Get Started!</button>
+          <button class="btn btn-learnmore">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- /home section -->
+    <!-- about section -->
+    <div class="about">
+      <div class="about-header pd-y">
+        <h1 class="about-title">welcome to website</h1>
+        <span class="line"></span>
+      </div>
+      <div class="countainer">
+        <div class="about-content">
+          <div class="about-item rtl-effect">
+            <i class="icon fas fa-cash-register"></i>
+            <h1 class="about-item-title">awesome things</h1>
+            <p class="about-item-desc">
+              Lorem eveniet expedita porro explicabo t amet consectinventore
+              quam eveniet expedita
+            </p>
+            <a class="about-item-link" href="#">read more</a>
+          </div>
+          <div class="about-item rtl-effect mg">
+            <i class="icon fab fa-500px"></i>
+            <h1 class="about-item-title">our company</h1>
+            <p class="about-item-desc">
+              Lorem eveniet expedita porro explicabo t amet consectinventore
+              quam eveniet expedita
+            </p>
+            <a class="about-item-link" href="#">read more</a>
+          </div>
+          <div class="about-item rtl-effect">
+            <i class="icon fab fa-acquisitions-incorporated"></i>
+            <h1 class="about-item-title">what we do</h1>
+            <p class="about-item-desc">
+              Lorem eveniet expedita porro explicabo t amet consectinventore
+              quam eveniet expedita
+            </p>
+            <a class="about-item-link" href="#">read more</a>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /about section -->
+    <!-- portfolio section -->
+    <div class="portfolio">
+      <div class="about-header pd-y">
+        <h1 class="portfolio-title">portfolio work</h1>
+        <span class="line"></span>
+      </div>
+      <div class="countainer">
+        <div class="portfolio-content">
+          <div class="portfolio-item">
+            <img src="images/work/work1.webp" alt="image 1" />
+            <div class="overportfolio">
+              <div class="overportfolio-content">
+                <span class="portfolio-item-title">Category</span>
+                <h3 class="portfolio-desc">Lorem ipsum a libero ad</h3>
+                <a href="#"><i class="i fas fa-allergies"></i></a>
+                <a href="images/work/work2.webp" target="_blank"
+                  ><i class="i fas fa-search-plus"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item mg">
+            <img src="images/work/work2.webp" alt="image 2" />
+            <div class="overportfolio">
+              <div class="overportfolio-content">
+                <span class="portfolio-item-title">Category</span>
+                <h3 class="portfolio-desc">Lorem ipsum a libero ad</h3>
+                <a href="#"><i class="i fas fa-allergies"></i></a>
+                <a href="images/work/work2.webp" target="_blank"
+                  ><i class="i fas fa-search-plus"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="images/work/work3.webp" alt="image 3" />
+            <div class="overportfolio">
+              <div class="overportfolio-content">
+                <span class="portfolio-item-title">Category</span>
+                <h3 class="portfolio-desc">Lorem ipsum a libero ad</h3>
+                <a href="#"><i class="i fas fa-allergies"></i></a>
+                <a href="images/work/work3.webp" target="_blank"
+                  ><i class="i fas fa-search-plus"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="images/work/work4.webp" alt="image 4" />
+            <div class="overportfolio">
+              <div class="overportfolio-content">
+                <span class="portfolio-item-title">Category</span>
+                <h3 class="portfolio-desc">Lorem ipsum a libero ad</h3>
+                <a href="#"><i class="i fas fa-allergies"></i></a>
+                <a href="images/work/work4.webp" target="_blank"
+                  ><i class="i fas fa-search-plus"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item mg">
+            <img src="images/work/work5.webp" alt="image 5" />
+            <div class="overportfolio">
+              <div class="overportfolio-content">
+                <span class="portfolio-item-title">Category</span>
+                <h3 class="portfolio-desc">Lorem ipsum a libero ad</h3>
+                <a href="#"><i class="i fas fa-allergies"></i></a>
+                <a href="images/work/work5.webp" target="_blank"
+                  ><i class="i fas fa-search-plus"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="images/work/work6.webp" alt="image 6" />
+            <div class="overportfolio">
+              <div class="overportfolio-content">
+                <span class="portfolio-item-title">Category</span>
+                <h3 class="portfolio-desc">Lorem ipsum a libero ad</h3>
+                <a href="#"><i class="i fas fa-allergies"></i></a>
+                <a href="images/work/work6.webp" target="_blank"
+                  ><i class="i fas fa-search-plus"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- / portfolio section -->
+
+    <!-- offer section -->
+    <div class="offer">
+      <div class="about-header pd-y">
+        <h1 class="offer-title">what we offer</h1>
+        <span class="line"></span>
+      </div>
+      <div class="countainer">
+        <div class="offer-item rtl-effect">
+          <i class="icon fas fa-star-half-alt"></i>
+          <h1 class="offer-item-title">app developpment</h1>
+          <p class="offer-item-desc">
+            Lorem ipsum Asperiores adipisicing eliu cum non fugiat Asperiores
+            adipisicing eliu
+          </p>
+        </div>
+        <div class="offer-item rtl-effect mg">
+          <i class="icon fas fa-brush"></i>
+          <h1 class="offer-item-title">graphic design</h1>
+          <p class="offer-item-desc">
+            Lorem ipsum Asperiores adipisicing eliu cum non fugiat Asperiores
+            adipisicing eliu
+          </p>
+        </div>
+        <div class="offer-item rtl-effect">
+          <i class="icon fas fa-american-sign-language-interpreting"></i>
+          <h1 class="offer-item-title">creative idea</h1>
+          <p class="offer-item-desc">
+            Lorem ipsum Asperiores adipisicing eliu cum non fugiat Asperiores
+            adipisicing eliu
+          </p>
+        </div>
+        <div class="offer-item rtl-effect">
+          <i class="icon fas fa-bullhorn"></i>
+          <h1 class="offer-item-title">marketing</h1>
+          <p class="offer-item-desc">
+            Lorem ipsum Asperiores adipisicing eliu cum non fugiat Asperiores
+            adipisicing eliu
+          </p>
+        </div>
+        <div class="offer-item rtl-effect mg">
+          <i class="icon fas fa-screwdriver"></i>
+          <h1 class="offer-item-title">awesome support</h1>
+          <p class="offer-item-desc">
+            Lorem ipsum Asperiores adipisicing eliu cum non fugiat Asperiores
+            adipisicing eliu
+          </p>
+        </div>
+        <div class="offer-item rtl-effect">
+          <i class="icon fab fa-alipay"></i>
+          <h1 class="offer-item-title">brand design</h1>
+          <p class="offer-item-desc">
+            Lorem ipsum Asperiores adipisicing eliu cum non fugiat Asperiores
+            adipisicing eliu
+          </p>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+
+    <!-- / offer section -->
+
+    <!-- after began offer  -->
+
+    <div class="after-offer">
+      <div class="countainer">
+        <div class="about-header pd-y">
+          <h1 class="after-offer-title">wyh choose us</h1>
+          <span class="line"></span>
+          <p class="after-offer-desc">
+            Lorem ipsum dolor sit amet consectetur adiiste quasi sunt eligendi
+            expedita minus vel accusantium sit amet consectetur adiiste quasi
+            sunt eligendi amet consectetur adiiste quasi.
+          </p>
+          <ul class="after-offer-list">
+            <li>
+              <i class="icon fas fa-check"></i>Lorem ipsum dolor sit amet
+              consequatur.
+            </li>
+            <li>
+              <i class="icon fas fa-check"></i>Lorem ipsum dolor sit amet
+              consequatur.
+            </li>
+            <li>
+              <i class="icon fas fa-check"></i>Lorem ipsum dolor sit amet
+              consequatur.
+            </li>
+            <li>
+              <i class="icon fas fa-check"></i>Lorem ipsum dolor sit amet
+              consequatur.
+            </li>
+          </ul>
+        </div>
+        <div class="after-offer-img">
+          <img src="images/about/about1.webp" alt="Image" draggable="false" />
+          <ul class="list-img">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+
+        <div class="clear"></div>
+      </div>
+    </div>
+
+    <!-- /  after end offer  -->
+
+    <!-- background with icons -->
+    <div class="background-section pd-y">
+      <div class="overlay">
+        <div class="countainer">
+          <div class="background-items">
+            <div class="background-item">
+              <i class="icon fas fa-trophy"></i>
+              <h2 class="number">12</h2>
+              <span class="title">awords won</span>
+            </div>
+
+            <div class="background-item">
+              <i class="icon fas fa-address-card"></i>
+              <h2 class="number">451</h2>
+              <span class="title">happy clients</span>
+            </div>
+            <div class="background-item">
+              <i class="icon fas fa-mug-hot"></i>
+              <h2 class="number">122</h2>
+              <span class="title">cups of coffe</span>
+            </div>
+            <div class="background-item">
+              <i class="icon fas fa-tasks"></i>
+              <h2 class="number">45</h2>
+              <span class="title">projects completed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /background with icons -->
+
+    <!-- pricing-section -->
+    <div class="pricing-section">
+      <div class="about-header pd-y">
+        <h1 class="about-title">pricing table</h1>
+        <span class="line"></span>
+      </div>
+      <div class="countainer">
+        <div class="pricing-items">
+          <div class="pricing-item utd-effect">
+            <span class="item-title">basic plan</span>
+            <div class="item-circle">
+              <h3 class="item-dollars">$9</h3>
+              <span class="item-month">/month</span>
+            </div>
+            <ul class="list">
+              <li>1 gb disc space</li>
+              <li>1 gb disc space</li>
+              <li>1 gb disc space</li>
+            </ul>
+            <button class="btn-price">buy now</button>
+          </div>
+          <div class="pricing-item mg utd-effect">
+            <span class="item-title">silver plan</span>
+            <div class="item-circle">
+              <h3 class="item-dollars">$18</h3>
+              <span class="item-month">/month</span>
+            </div>
+            <ul class="list">
+              <li>1 gb disc space</li>
+              <li>1 gb disc space</li>
+              <li>1 gb disc space</li>
+            </ul>
+            <button class="btn-price">buy now</button>
+          </div>
+          <div class="pricing-item utd-effect">
+            <span class="item-title">gold plan</span>
+            <div class="item-circle">
+              <h3 class="item-dollars">$39</h3>
+              <span class="item-month">/month</span>
+            </div>
+            <ul class="list">
+              <li>1 gb disc space</li>
+              <li>1 gb disc space</li>
+              <li>1 gb disc space</li>
+            </ul>
+            <button class="btn-price">buy now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /pricing-section -->
+
+    <!-- person-section -->
+    <div class="person pd-y">
+      <div class="overlay">
+        <div class="countainer">
+          <div class="person-items">
+            <div class="person-item">
+              <div class="inner-item">
+                <img src="images/team/team2.webp" alt="image" />
+                <h2 class="name">john don</h2>
+                <span class="title">web designer</span>
+                <p class="para">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
+                  est rerum obcaecati fuga molestias voluptas, laborum amet
+                  cupiditate vero dicta.
+                </p>
+              </div>
+            </div>
+            <div class="person-item">
+              <div class="inner-item">
+                <img src="images/team/team3.webp" alt="image" />
+                <h2 class="name">make amone</h2>
+                <span class="title">web developper</span>
+                <p class="para">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
+                  est rerum obcaecati fuga molestias voluptas, laborum amet
+                  cupiditate vero dicta.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- / person-section -->
+
+    <!-- team -->
+    <div class="team">
+      <div class="about-header pd-y">
+        <h1 class="about-title">our team</h1>
+        <span class="line"></span>
+      </div>
+      <div class="countainer">
+        <div class="team-items">
+          <div class="team-item utd-effect">
+            <div class="team-img">
+              <img src="images/team/team2.webp" alt="image" />
+              <div class="team-overlay">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <h2 class="team-name">don jon</h2>
+            <span class="team-title">disigner</span>
+          </div>
+          <div class="team-item utd-effect mg">
+            <div class="team-img">
+              <img src="images/team/team1.webp" alt="image" />
+              <div class="team-overlay">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <h2 class="team-name">make tomas</h2>
+            <span class="team-title">manager</span>
+          </div>
+          <div class="team-item utd-effect">
+            <div class="team-img">
+              <img src="images/team/team3.webp" alt="image" />
+              <div class="team-overlay">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <h2 class="team-name">make amon</h2>
+            <span class="team-title">devolopper</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- / team -->
+    <!-- news -->
+    <div class="news">
+      <div class="about-header pd-y">
+        <h1 class="about-title">recents news</h1>
+        <span class="line"></span>
+      </div>
+      <div class="countainer">
+        <div class="news-items">
+          <div class="news-item">
+            <div class="news-img">
+              <img src="images/blog/blog1.webp" alt="image" />
+            </div>
+            <ul class="news-list">
+              <li>
+                <i class="icon fas fa-address-book"></i>
+                <span class="icon-title">john smith</span>
+              </li>
+              <li>
+                <i class="icon far fa-clock"></i>
+                <span class="icon-title">13 oct</span>
+              </li>
+              <li>
+                <i class="icon fas fa-comments"></i>
+                <span class="icon-title">88</span>
+              </li>
+            </ul>
+            <h2 class="news-title">Lorem ipsum dolor sit amet consectetur</h2>
+            <p class="news-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Molestiae, autem ut. Quidem cupiditate.
+            </p>
+            <a class="news-link" href="#">read more</a>
+          </div>
+          <div class="news-item mg">
+            <div class="news-img">
+              <img src="images/blog/blog2.webp" alt="image" />
+            </div>
+            <ul class="news-list">
+              <li>
+                <i class="icon fas fa-address-book"></i>
+                <span class="icon-title">john smith</span>
+              </li>
+              <li>
+                <i class="icon far fa-clock"></i>
+                <span class="icon-title">13 oct</span>
+              </li>
+              <li>
+                <i class="icon fas fa-comments"></i>
+                <span class="icon-title">88</span>
+              </li>
+            </ul>
+            <h2 class="news-title">Lorem ipsum dolor sit amet consectetur</h2>
+            <p class="news-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Molestiae, autem ut. Quidem cupiditate.
+            </p>
+            <a class="news-link" href="#">read more</a>
+          </div>
+
+          <div class="news-item">
+            <div class="news-img">
+              <img src="images/blog/blog3.webp" alt="image" />
+            </div>
+            <ul class="news-list">
+              <li>
+                <i class="icon fas fa-address-book"></i>
+                <span class="icon-title">john smith</span>
+              </li>
+              <li>
+                <i class="icon far fa-clock"></i>
+                <span class="icon-title">13 oct</span>
+              </li>
+              <li>
+                <i class="icon fas fa-comments"></i>
+                <span class="icon-title">88</span>
+              </li>
+            </ul>
+            <h2 class="news-title">Lorem ipsum dolor sit amet consectetur</h2>
+            <p class="news-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Molestiae, autem ut. Quidem cupiditate.
+            </p>
+            <a class="news-link" href="#">read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /news -->
+
+    <!-- form -->
+    <div class="form">
+      <div class="about-header pd-y">
+        <h1 class="about-title">get in touch</h1>
+        <span class="line"></span>
+      </div>
+      <div class="countainer">
+        <div class="contact-items">
+          <div class="contact-item">
+            <i class="icon fas fa-phone"></i>
+            <h2 class="contact-title">phone</h2>
+            <p class="contact-desc">2126377-554-77</p>
+          </div>
+          <div class="contact-item mg">
+            <i class="icon fas fa-envelope"></i>
+            <h2 class="contact-title">message</h2>
+            <p class="contact-desc">email@support.com</p>
+          </div>
+          <div class="contact-item">
+            <i class="icon fas fa-map-marker-alt"></i>
+            <h2 class="contact-title">address</h2>
+            <p class="contact-desc">dilver camon 123p</p>
+          </div>
+        </div>
+        <div class="form-s">
+          <input class="txt-name" type="text" placeholder="  Name" />
+          <input class="txt-email" type="email" placeholder="  Email" />
+          <input class="txt-subject" type="email" placeholder="  Subject" />
+
+          <textarea
+            name=""
+            id=""
+            cols="50"
+            rows="10"
+            placeholder=" Message "
+          ></textarea>
+          <button>sent message</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- /form -->
+
+    <!-- footer-->
+    <div class="footer">
+      <img src="images/about/logo-alt.webp" alt="" draggable="false" />
+      <ul class="footer-list-icons">
+        <li>
+          <a href="#"><i class="icon fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="icon fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="icon fab fa-linkedin-in"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="icon fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="icon fab fa-youtube"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="icon fab fa-google-plus-g"></i></a>
+        </li>
+      </ul>
+      <p class="footer-para">
+        copyright &COPY; 2021 all rights reserved designed by samad
+      </p>
+    </div>
+
+    <!-- /footer -->
+  </body>
+</html>

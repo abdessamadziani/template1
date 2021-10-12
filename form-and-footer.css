@@ -1,0 +1,122 @@
+/* began form */
+.form {
+  background-color: white;
+  margin-top: 60px;
+}
+.contact-items {
+  overflow: hidden;
+}
+.contact-item {
+  float: left;
+  width: 24%;
+  text-align: center;
+}
+.contact-item.mg {
+  margin: 0px 14%;
+}
+.contact-item .icon {
+  color: rgb(33, 119, 199);
+  font-size: 35px;
+  padding: 10px 10px;
+}
+.contact-title {
+  padding: 6px 0;
+  text-transform: capitalize;
+  color: black;
+  font-size: 30px;
+}
+.contact-desc {
+  padding: 6px 0;
+  color: #999;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.form-s {
+  margin: 70px 0;
+  text-align: center;
+}
+.txt-name {
+  width: 300px;
+  height: 40px;
+  background-color: whitesmoke;
+  border: none;
+}
+.txt-email {
+  width: 300px;
+  height: 40px;
+  background-color: whitesmoke;
+  margin-left: 30px;
+  border: none;
+}
+.txt-subject {
+  display: block;
+  border: none;
+  background-color: whitesmoke;
+  margin-left: 30px;
+  width: 650px;
+  height: 40px;
+  margin: auto;
+  margin-top: 40px;
+}
+textarea {
+  display: block;
+  width: 650px;
+  margin: auto;
+  margin-top: 40px;
+  background-color: whitesmoke;
+  border: none;
+}
+.form-s button {
+  min-width: 150px;
+  padding: 13px;
+  margin: 40px 0;
+  border-radius: 4px;
+  border: 0;
+  color: white;
+  background-color: rgb(17, 137, 218);
+  cursor: pointer;
+  font-size: 16px;
+  transition: hover 0.5s;
+}
+.form-s button:hover {
+  opacity: 0.9;
+}
+
+/* end form */
+
+/* began footer */
+.footer {
+  text-align: center;
+  height: 300px;
+  background-color: black;
+}
+.footer img {
+  margin-top: 30px;
+  width: 150px;
+}
+.footer-list-icons li {
+  display: inline-block;
+  padding: 10px 5px;
+}
+.footer-list-icons li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgb(8, 109, 204);
+  transition: hover 0.5s;
+}
+.footer-list-icons li a:hover {
+  opacity: 0.8;
+}
+.footer-list-icons li a i {
+  color: white;
+  line-height: 40px;
+}
+.footer-para {
+  color: white;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+/* end  footer */
